@@ -1,0 +1,483 @@
+.header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 60px;
+    z-index: 999;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    width: 1780px;
+    justify-content: space-between;
+}
+
+.header .inner .logo h1 a {
+    display: block;
+    background: url(../image/logo_w.png)no-repeat center center/cover;
+    width: 280px;
+    height: 35px;
+}
+
+.header.on .inner .logo h1 a {
+    background: url(../image/logo_b.png)no-repeat center center/cover;
+}
+
+.header .gnb {
+    margin: 0 0 0 auto;
+    display: none;
+}
+
+.header .gnb ul {
+    display: flex;
+    outline: 1px solid black;
+}
+
+.header .Lang {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 0 auto;
+}
+
+.header.on .Lang {
+    color: #000;
+}
+
+.header .menuBars {
+    color: #fff;
+    font-size: 40px;
+    margin: 0 0 0 30px;
+}
+
+.header.on .menuBars {
+    color: #000;
+}
+
+/*header끝*/
+.mainSlider {
+    position: relative;
+}
+
+.mainSlider .inner {
+    position: relative;
+}
+
+.mainSlider .inner figure {
+    height: 100vh;
+    position: relative;
+}
+
+figure .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+}
+
+.slogan strong {
+    margin: 0 0 50px 0;
+    font-size: 150px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 120%;
+}
+
+.slogan p {
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.inner .slide01 {
+    background: url(../image/visual_main3.png)no-repeat center center/cover;
+}
+
+.inner .slide02 {
+    background: url(../image/visual_main2.png)no-repeat center center/cover;
+}
+
+.inner .slide03 {
+    background: url(../image/visual_main1.png)no-repeat center center/cover;
+}
+
+.inner .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.inner .slick-dots>* {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.inner .slick-dots button {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+.inner .slick-dots li.slick-active button {
+    background: #da2128;
+}
+
+.mainSlider .scr {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.mainSlider .scr i {
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 3px;
+}
+
+.mainSlider .scr span {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*mainSlider끝*/
+.mainEvent {
+    padding: 200px 0 100px 0;
+}
+
+.Eventbox {
+    position: relative;
+}
+
+.mainEvent h2 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 50px 0;
+}
+
+.mainEvent .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.mainEvent .tit {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.eventSlide {
+    margin: 0 -15px;
+    position: relative;
+}
+
+.eventSlide figure {
+    padding: 0 15px;
+}
+
+.eventSlide figure img {
+    width: 100%;
+}
+
+.eventSlide figure strong {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.eventSlide figure p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.Eventbox .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1350px;
+}
+
+.Eventbox .arrows i {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    background: #333;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+
+.Eventbox .arrows .left {
+    left: 0;
+}
+
+.Eventbox .arrows .right {
+    right: 0;
+}
+
+/* mainEvent끝 */
+.mainProject {
+    background-color: #eee;
+
+}
+
+.project {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+}
+
+.project li {
+    flex: 1;
+    text-align: center;
+}
+
+
+
+.project li i {
+    font-size: 80px;
+    border: 5px solid #000;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.project figure.hover i {
+    color: #da2128;
+}
+
+.project li .result {
+    text-align: center;
+}
+
+.result strong {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 6px 0;
+
+}
+
+.result span {
+    display: block;
+    font-size: 40px;
+    font-weight: 600;
+    color: #da2128;
+
+}
+
+/* mainProject끝 */
+.mainContent {
+    padding: 100px 0 200px 0;
+    position: relative;
+}
+
+.mainContent h2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mainContent h2 strong {
+    font-size: 50px;
+    line-height: 1.2;
+    margin: 0 0 50px 0;
+}
+
+.mainContent h2 span {
+    font-size: 120px;
+    font-weight: 500;
+}
+
+.mainContent .tit {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.mainContent .video {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.video .YT {
+    width: 770px;
+    height: 525px;
+    font-size: 0;
+    border: 1px solid #da2128;
+}
+
+.video .ctr {
+    position: absolute;
+    bottom: 0;
+    right: 235px;
+    cursor: pointer;
+}
+
+.video .ctr .play {
+    font-size: 50px;
+    padding: 10px;
+    border: 1px solid #da2128;
+    border-radius: 5px;
+    color: #da2128;
+    margin: 0 10px 0 0;
+}
+
+.video .ctr .play.hover {
+    color: #fff;
+    background: #da2128;
+    border: none;
+}
+
+.video .ctr .pause {
+    font-size: 50px;
+    padding: 10px;
+    border: 1px solid #da2128;
+    border-radius: 5px;
+    color: #da2128;
+}
+
+/* mainContent 끝 */
+.mainProduct {
+    position: relative;
+}
+
+.mainProduct .bgimg {
+    height: 100vh;
+    background: url(../image/sec3.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-size: 0;
+}
+
+.mainProduct .txt {
+    position: absolute;
+    width: 1200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.mainProduct .txt strong {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.mainProduct .txt strong::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    margin: 50px 0;
+}
+
+.mainProduct .txt p {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* mainProduct 끝 */
+.footer {
+    background-color: #333;
+}
+
+.footer .f_box {
+    max-width: 1200px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.f_box .f_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_left h2 {
+    margin-bottom: 15px;
+}
+
+.top_left .sns {
+    text-align: center;
+    font-size: 30px;
+    color: #eee;
+}
+
+.top_right>ul {
+    display: flex;
+    gap: 80px;
+}
+
+.top_right>ul li {
+    flex: 1;
+    width: 150px;
+    text-align: center;
+}
+
+.top_right>ul li a {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.top_right>ul li .sub {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.top_right>ul li .sub li {
+    padding: 3px 0;
+}
+
+.f_box .f_bottom::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.7);
+    margin: 20px 0;
+}
+
+.f_bottom {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.f_bottom .bt_01 {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.f_bottom .bt_02 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
